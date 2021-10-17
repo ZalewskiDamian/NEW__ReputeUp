@@ -1,0 +1,111 @@
+@import 'global.scss';
+
+.section-1 {
+    background: $hero-gradient;
+    // background-image: url(../images/road.svg);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__logo {
+            max-width: 150px;
+        }
+        &__navigation {
+            display: none;
+        }
+        &__hamburger {
+            width: 40px;
+
+            &--line {
+                height: 3px;
+                width: 40px;
+                background-color: $white;
+                
+                &:not(:last-child) {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+
+    &__wrapper {
+        margin-top: 50px;
+        text-align: center;
+    }
+    &__lead {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $white;
+        margin-bottom: 30px;
+        opacity: .75;
+    }
+    &__btn {
+        font-size: 20px;
+        line-height: 1.4;
+        font-weight: 700;
+        color: $white;
+        background-color: transparent;
+        border: 3px solid $pink;
+        border-radius: 8px;
+        padding: 15px 30px 15px 0;
+        text-align: center;
+        max-width: 255px;
+        margin: 0 auto;
+        position: relative;
+        transition: all .35s ease-in-out;
+
+        &:hover {
+            background-color: $pink;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+            width: 16px;
+            height: 20px;
+            background-image: url(../images/btn_arrow_down.svg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.section-2 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include media-md {
+            flex-direction: row;
+        }
+    }
+    &__paragraph {
+        line-height: 1.7;
+        
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+    &__img-wrapper {
+        max-width: 360px;
+        margin: 40px 0 20px;
+        flex-shrink: 0;
+
+        @include media-sm {
+            max-width: 480px;
+        }
+    }
+}
