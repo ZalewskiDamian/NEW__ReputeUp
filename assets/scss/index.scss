@@ -216,11 +216,14 @@
     background-position: center;
     background-repeat: no-repeat;
     padding-top: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 
     @include media-sm {
         padding-top: 90px;
-        padding-bottom: 50px;
+        padding-bottom: 100px;
+    }
+    @include media-lg {
+        padding-bottom: 120px;
     }
 
     .section__header--title {
@@ -353,5 +356,227 @@
     }
     &__text-wrapper {
         margin-top: 20px;
+    }
+}
+
+.section-4 {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -55px;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        height: 56px;
+        background-image: url(../images/workflow-shape-bottom.svg);
+        background-size: cover;
+        background-position: center center;
+
+        @include media-lg {
+            height: 76px;
+            top: -75px;
+        }
+    }
+
+    &__content {
+        padding-top: 20px;
+        position: relative;
+    }
+    &__slider {
+        position: relative;
+    }
+    &__switch {
+        width: 100%;
+        max-width: 290px;
+        background-color: $light-blue;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 0 auto 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include media-sm {
+            max-width: 390px;
+            padding: 7px;
+            margin: 20px auto 70px;
+        }
+
+        &--btn {
+            display: block;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 500;
+            background-color: transparent;
+            border: 0;
+            border-radius: 5px;
+            text-align: center;
+            padding: 8px 0;
+            width: 93px;
+            cursor: pointer;
+            transition: all .35s ease-in-out;
+
+            @include media-sm {
+                font-size: 16px;
+                width: 120px;
+                padding: 14px 0;
+            }
+        }
+        &--btn.btn--active {
+            background-color: $white;
+            box-shadow: 0 3px 4px rgba(37, 77, 119, .1);
+        }
+    }
+    .slide {
+        border: 1px solid $navy-blue-light;
+        border-radius: 20px;
+        padding: 40px 30px;
+        width: 100%;
+        max-width: 330px;
+        margin: 0 auto 20px;
+        transition: all .35s ease-in-out;
+
+        @include media-lg {
+            max-width: 350px;
+        }
+        &:hover {
+            box-shadow: 0 4px 25px rgba(38,78,118,.1);
+        }
+
+        &__heading {
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &__price-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        &__price {
+            font-size: 34px;
+            line-height: 34px;
+            font-weight: 700;
+            margin-right: 5px;
+        }
+        &__currency {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 700;
+        }
+        &__wrapper {
+            margin: 10px 0;
+            border-bottom: 1px solid $gray-light;
+        }
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 0;
+        }
+        &__text {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        &__list {
+            padding-left: 40px;
+            margin-top: 20px;
+        }
+        &__list-item {
+            position: relative;
+            font-size: 16px;
+            margin-bottom: 10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -35px;
+                width: 18px;
+                height: 18px;
+                background-image: url(../images/pricing-check-icon.svg);
+                background-size: 100% 100%;
+            }
+        }
+        &__btn {
+            margin: 25px auto 0;
+            max-width: 175px;
+            font-weight: 500;
+            background-color: $navy-blue;
+            padding: 10px 45px;
+            border-radius: 45px;
+            color: $white;
+            transition: all .35s ease-in-out;
+        }
+    }
+    .slider-arrow-prev,
+    .slider-arrow-next {
+        display: none;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url(../images/pricing-arrow.svg);
+        background-size: 100% 100%;
+        cursor: pointer;
+
+        @include media-md {
+            display: block;
+        }
+    }
+    .slider-arrow-prev {
+        left: -35px;
+
+        @include media-lg {
+            left: -15px;
+        }
+        @media (min-width: 1320px) {
+            left: -40px;
+        }
+    }
+    .slider-arrow-next {
+        right: -35px;
+        transform: translateY(-50%) rotate(180deg);
+
+        @include media-lg {
+            right: -15px;
+        }
+        @media (min-width: 1320px) {
+            right: -40px;
+        }
+    }
+    .swiper-pagination {
+        bottom: -40px;
+
+        @include media-md {
+            display: none;
+        }
+    }
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: $navy-blue;
+    }
+    
+}
+
+.section-5 {
+    background-color: $navy-blue-dark;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .section__header--title {
+        color: $white;
+    }
+    .section__header--subTitle {
+        opacity: .7;
+        color: $white;
     }
 }

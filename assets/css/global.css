@@ -188,6 +188,10 @@ img {
   width: 100%;
 }
 
+button {
+  font-family: 'DM Sans', sans-serif;
+}
+
 section {
   position: relative;
 }

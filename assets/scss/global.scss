@@ -3,8 +3,12 @@
 //COLORS
 $white: #ffffff;
 $black: #0F2137;
+$gray-light: #F5F5F5;
 $pink: #B3568F;
 $navy-blue: #7661B9;
+$navy-blue-light: #D5CEE9;
+$navy-blue-dark: #303291;
+$light-blue: #F7F8FB;
 $hero-gradient: linear-gradient(90deg, rgba(42,44,125,1) 0%, rgba(101,82,161,1) 100%);
 
 //BREAKPOINTS
@@ -182,6 +186,10 @@ ul, ol {
 img {
     display: block;
     width: 100%;
+}
+
+button {
+    font-family: 'DM Sans', sans-serif;
 }
 
 section {
