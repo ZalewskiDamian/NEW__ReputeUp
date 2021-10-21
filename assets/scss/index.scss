@@ -1,10 +1,17 @@
 @import 'global.scss';
 
 .section-1 {
-    background: $hero-gradient;
-    // background-image: url(../images/road.svg);
+    // background-color: $navy-blue;
+    background-image: url(../images/hero-bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
+
+    @include media-sm {
+        background-image: url(../images/road-bg.svg);
+    }
 
     .header {
         display: flex;
@@ -33,8 +40,49 @@
     }
 
     &__wrapper {
-        margin-top: 50px;
+        margin: 50px auto 0;
+        width: 100%;
+        max-width: 420px;
         text-align: center;
+    }
+    &__ilustration {
+        width: 200px;
+        height: 200px;
+        margin: 70px auto 55px;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0px 11px 35px rgba(0,0,0, .08);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &--icon {
+            max-width: 112px;
+        }
+        &--circle {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            background-color: $white;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 8px 20px rgba(0,0,0,.16);
+
+            &:nth-child(2){
+                top: 0;
+                right: 5px;
+            }
+            &:nth-child(3){
+                top: 60px;
+                right: -25px;
+            }
+        }
+        &--circle-icon {
+            max-width: 30px;
+        }
     }
     &__lead {
         font-size: 18px;
@@ -45,19 +93,25 @@
         opacity: .75;
     }
     &__btn {
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.4;
         font-weight: 700;
         color: $white;
         background-color: transparent;
         border: 3px solid $pink;
         border-radius: 8px;
-        padding: 15px 30px 15px 0;
+        padding: 10px 30px 10px 0;
         text-align: center;
-        max-width: 255px;
+        max-width: 220px;
         margin: 0 auto;
         position: relative;
         transition: all .35s ease-in-out;
+
+        @include media-md {
+            max-width: 255px;
+            font-size: 20px;
+            padding: 15px 30px 15px 0;
+        }
 
         &:hover {
             background-color: $pink;
@@ -82,6 +136,37 @@
     padding-top: 30px;
     padding-bottom: 40px;
 
+    @include media-sm {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+    @include media-md {
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+    @include media-lg {
+        padding-top: 90px;
+        padding-bottom: 60px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -55px;
+        z-index: 2;
+        left: 0;
+        width: 100%;
+        height: 56px;
+        background-image: url(../images/workflow-shape-top.svg);
+        background-size: cover;
+        background-position: center center;
+
+        @include media-lg {
+            height: 76px;
+            bottom: -75px;
+        }
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -92,13 +177,6 @@
             flex-direction: row;
         }
     }
-    &__paragraph {
-        line-height: 1.7;
-        
-        &:not(:last-child) {
-            margin-bottom: 25px;
-        }
-    }
     &__img-wrapper {
         max-width: 360px;
         margin: 40px 0 20px;
@@ -107,5 +185,173 @@
         @include media-sm {
             max-width: 480px;
         }
+        @include media-md {
+            max-width: 420px;
+        }
+        @include media-lg {
+            max-width: 540px;
+        }
+    }
+    &__text-wrapper {
+        @include media-lg {
+            padding-right: 70px;
+        }
+    }
+    &__paragraph {
+        line-height: 1.7;
+        text-align: center;
+        
+        @include media-md {
+            text-align: left;
+        }
+        &:not(:last-child) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.section-3 {
+    background-image: url(../images/workflow-bg-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 30px;
+
+    @include media-sm {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .section__header--title {
+        color: $white;
+    }
+    .section__header--subTitle {
+        opacity: .7;
+        color: $white;
+    }
+
+    &__content {
+        padding-top: 40px;
+        display: grid;
+        grid-gap: 160px;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include media-sm {
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 25px;
+            padding-top: 50px;
+        }
+        @include media-lg {
+            padding-top: 60px;
+        }
+    }
+    &__card {
+        width: 100%;
+        max-width: 220px;
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+
+        &:not(:last-child) {
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -120px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 25px;
+                height: 110px;
+                background-image: url(../images/workflow-arrow.svg);
+                background-size: 100% 100%;
+
+                @include media-sm {
+                    content: unset;
+                }
+                @include media-md {
+                    content: '';
+                    bottom: unset;
+                    top: 15px;
+                    transform: translateX(-50%) rotate(-90deg);
+                    width: 20px;
+                    height: 70px;
+                    left: unset;
+                    right: -33px;
+                }
+                @include media-lg {
+                    width: 25px;
+                    height: 100px;
+                    top: 0;
+                    right: -40px;
+                }
+            }
+        }
+
+        &--counter {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+        &--icon {
+            margin: 0;
+        }
+        .icon--first {
+            max-width: 45px;
+        }
+        .icon--second {
+            max-width: 60px;
+        }
+        .icon--third {
+            max-width: 35px;
+        }
+        .icon--fourth {
+            max-width: 55px;
+        }
+        .icon--fifth {
+            max-width: 60px;
+        }
+        &--title {
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: $white;
+        }
+        &--subTitle {
+            font-size: 14px;
+            line-height: 1.5;
+            color: $white;
+        }
+    }
+    &__square {
+        width: 96px;
+        height: 96px;
+        border-radius: 16px;
+        background-color: $white;
+        box-shadow: 0px 3px 6px rgba(0,0,0, .16);
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__circle {
+        width: 38px;
+        height: 38px;
+        background-color: $white;
+        border-radius: 50%;
+        box-shadow: 0px 3px 8px rgba(0,0,0, .16);
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text-wrapper {
+        margin-top: 20px;
     }
 }

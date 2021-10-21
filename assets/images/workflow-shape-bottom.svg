@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1937.937" height="74.355" viewBox="0 0 1937.937 74.355">
+  <defs>
+    <filter id="workflow-shape-bottom" x="0" y="0" width="1937.937" height="74.355" filterUnits="userSpaceOnUse">
+      <feOffset dy="-8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#workflow-shape-bottom)">
+    <path id="workflow-shape-bottom-2" data-name="workflow-shape-bottom" d="M1919.937,1939.355s-341.384-43.051-634.4-49.96-295.8,24.185-537.657,22.325-242.783-34.675-429.753-27.766S0,1939.355,0,1939.355Z" transform="translate(9 -1866)" fill="#fff"/>
+  </g>
+</svg>
