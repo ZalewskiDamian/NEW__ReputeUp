@@ -3,6 +3,7 @@
 //COLORS
 $white: #ffffff;
 $black: #0F2137;
+$gray: #7E7E7E;
 $gray-light: #F5F5F5;
 $pink: #B3568F;
 $navy-blue: #7661B9;
@@ -186,6 +187,7 @@ ul, ol {
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 button {
