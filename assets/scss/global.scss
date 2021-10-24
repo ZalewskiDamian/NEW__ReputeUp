@@ -10,7 +10,7 @@ $navy-blue: #7661B9;
 $navy-blue-light: #D5CEE9;
 $navy-blue-dark: #303291;
 $light-blue: #F7F8FB;
-$hero-gradient: linear-gradient(90deg, rgba(42,44,125,1) 0%, rgba(101,82,161,1) 100%);
+$hero-gradient: linear-gradient(90deg, #1f3a85 0%, #8155b1 100%);
 $footer-gradient: linear-gradient(90deg, rgba(48,50,145,1) 0%, rgba(24,25,73,1) 100%);
 
 //BREAKPOINTS
@@ -45,6 +45,17 @@ $footer-gradient: linear-gradient(90deg, rgba(48,50,145,1) 0%, rgba(24,25,73,1) 
     font-weight: 700;
     margin-bottom: 20px;
     color: $white;
+
+    @include media-sm {
+        font-size: 42px;
+    }
+    @include media-md {
+        font-size: 56px;
+    }
+    @include media-lg {
+        font-size: 70px;
+        text-shadow: 1px 1px 2px #000;
+    }
 }
 
 .section__header {
@@ -163,6 +174,7 @@ html, body {
     margin: 0;
     padding: 0;
     color: #000000;
+    scroll-behavior: smooth;
 }
 
 a {
