@@ -1128,6 +1128,7 @@ section {
 }
 
 .section-4__slider {
+  display: block;
   position: relative;
 }
 

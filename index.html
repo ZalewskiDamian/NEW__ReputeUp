@@ -194,18 +194,18 @@
             </div>
             <div class="section-4__content">
                 <div class="section-4__switch">
-                    <button data-id="google" class="section-4__switch--btn btn--active">
+                    <button data-id="google" aria-expanded="false" class="section-4__switch--btn btn--active">
                         Google
                     </button>
-                    <button data-id="facebook" class="section-4__switch--btn">
+                    <button data-id="facebook" aria-expanded="false" class="section-4__switch--btn">
                         Facebook
                     </button>
-                    <button data-id="tripadvisor" class="section-4__switch--btn">
+                    <button data-id="tripadvisor" aria-expanded="false" class="section-4__switch--btn">
                         Tripadvisor
                     </button>
                 </div>
-                <div class="section-4__slider">
-                    <div class="swiper">
+                <div class="section-4__slider active-swiper">
+                    <div class="swiper swiper-google">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="slide">
@@ -592,10 +592,635 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-arrow-prev"></div>
-                    <div class="slider-arrow-next"></div>
+                    <div class="slider-arrow-prev arrow-prev-google"></div>
+                    <div class="slider-arrow-next arrow-next-google"></div>
+                    <div class="swiper-pagination pagination-google"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="section-4__slider">
+                    <div class="swiper swiper-facebook">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h3 class="slide__heading">
+                                        Pakiet testowy
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">40</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                5
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 5 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet standard
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">75</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                10
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 20 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet premium
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">140</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                20
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 30 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet premium plus
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">210</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                30
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 30 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet platinum
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">370</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                50
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrow-prev arrow-prev-facebook"></div>
+                    <div class="slider-arrow-next arrow-next-facebook"></div>
+                    <div class="swiper-pagination pagination-facebook"></div>
+                </div>
+                <div class="section-4__slider">
+                    <div class="swiper swiper-tripadvisor">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h3 class="slide__heading">
+                                        Pakiet testowy
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">50</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                5
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <h3 class="slide__heading">
+                                        Pakiet standard
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">100</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                10
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 20 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet premium
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">180</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                20
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 40 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet premium plus
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">260</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                30
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 80 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet platinum
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">420</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                50
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide">
+                                    <div class="slide__discount">
+                                        Zaoszczędzisz 180 zł
+                                    </div>
+                                    <h3 class="slide__heading">
+                                        Pakiet maxx
+                                    </h3>
+                                    <div class="slide__price-wrapper">
+                                        <span class="slide__price">820</span>
+                                        <span class="slide__currency">zł</span>
+                                    </div>
+                                    <div class="slide__wrapper">
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Ilość opinii
+                                            </p>
+                                            <p class="slide__text">
+                                                100
+                                            </p>
+                                        </div>
+                                        <div class="slide__inner">
+                                            <p class="slide__text">
+                                                Rozpoczęcie zamówienia
+                                            </p>
+                                            <p class="slide__text">
+                                                24h
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <ul class="slide__list">
+                                        <li class="slide__list-item">
+                                            Ocena 5 gwiazdek
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Polskie konta
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Raport z postępów prac
+                                        </li>
+                                        <li class="slide__list-item">
+                                            100% dyskrecji
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Opinia tekstowa
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Personalizacja treści
+                                        </li>
+                                        <li class="slide__list-item">
+                                            Konta z historią min. 4 lata
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn slide__btn">Zamawiam</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-arrow-prev arrow-prev-tripadvisor"></div>
+                    <div class="slider-arrow-next arrow-next-tripadvisor"></div>
+                    <div class="swiper-pagination pagination-tripadvisor"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -947,5 +1572,6 @@
 <script src="./assets/js/swiper.js"></script>
 <script src="./assets/js/acordion.js"></script>
 <script src="./assets/js/hamburger.js"></script>
+<script src="./assets/js/pricing-switch.js"></script>
 </body>
 </html>

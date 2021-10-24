@@ -620,8 +620,12 @@
         position: relative;
     }
     &__slider {
+        display: block;
         position: relative;
     }
+    // .active-swiper {
+    //     display: block;
+    // }
     &__switch {
         width: 100%;
         max-width: 290px;
