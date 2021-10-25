@@ -185,6 +185,7 @@ html, body {
 
 a {
   text-decoration: none;
+  outline: none;
 }
 
 h1,

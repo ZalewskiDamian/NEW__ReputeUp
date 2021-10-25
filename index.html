@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
@@ -15,7 +16,9 @@
         <div class="container">
             <header class="header">
                 <div class="header__logo">
-                    <img src="./assets/images/Logo.svg" alt="website logo">
+                    <a href="#">
+                        <img src="./assets/images/Logo.svg" alt="website logo">
+                    </a>
                 </div>
                 <nav class="header__navigation">
                     <li class="header__navigation-item">
@@ -42,7 +45,7 @@
                 </div>
             </header>
             <div class="section-1__content">
-                <div class="section-1__wrapper">
+                <div class="section-1__wrapper animate__animated animate__fadeInLeft">
                     <h1 class="section-1__heading heading">
                         Dobra opinia to klucz do sukcesu
                     </h1>
@@ -51,8 +54,8 @@
                     </h4>
                     <a href="#about-us" class="btn section-1__btn">Sprawdź więcej</a>
                 </div>
-                <div class="section-1__ilustration">
-                    <img src="./assets/images/hero-google-icon.svg" alt="google opinie logo" class="section-1__ilustration--icon">
+                <div class="section-1__ilustration ">
+                    <img src="./assets/images/hero-google-icon.svg" alt="google opinie logo" class="section-1__ilustration--icon animate__animated animate__zoomIn">
                     <div class="section-1__ilustration--circle">
                         <img src="./assets/images/hero-fb-icon.svg" alt="facebook opinions" class="section-1__ilustration--circle-icon">
                     </div>
@@ -66,7 +69,7 @@
     <section class="section-2" id="about-us">
         <div class="container">
             <div class="section-2__wrapper">
-                <div class="section-2__text-wrapper">
+                <div class="section-2__text-wrapper animate__animated animate__fadeInLeft">
                     <div class="section__sideheader">
                         <p class="section__sideheader--subTitle">
                             o nas
@@ -82,7 +85,7 @@
                         ReputeUp  zajmuję się budowaniem i wzmacnianiem wizerunku w sieci oraz tworzeniem skutecznych kampanii reklamowych. Nadrzędnym celem naszej działalności jest zapewnienie Klientom pozytywnej i wiarygodnej opinii w Internecie, a co za tym idzie - mocnej pozycji na rynku pośród konkurencji. Mając świadomość, że zadowolony klient to najlepszy rodzaj promocji, prowadzimy spersonalizowane, a co najważniejsze - skuteczne działania opierające się na opiniach Google, a także marketingu szeptanym, realizowanym na najpopularniejszych portalach społecznościowych tak, aby zwiększyć renomę Twojej marki  i dotrzeć do jak największej liczby odbiorców.
                     </p>
                 </div>
-                <div class="section-2__img-wrapper">
+                <div class="section-2__img-wrapper animate__animated animate__fadeInRight">
                     <img src="./assets/images/about-us-ilustration.svg" alt="Google Opinie Kupno">
                 </div>
             </div>
@@ -90,7 +93,7 @@
     </section>
     <section class="section-3" id="workflow">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header animate__animated animate__zoomIn">
                 <p class="section__header--subTitle">
                     jak działamy
                 </p>
@@ -184,7 +187,7 @@
     </section>
     <section class="section-4" id="pricing">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header animate__animated animate__zoomIn">
                 <p class="section__header--subTitle">
                     nasza oferta
                 </p>
@@ -1226,7 +1229,7 @@
     </section>
     <section class="section-5" id="achievements">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header animate__animated animate__zoomIn">
                 <p class="section__header--subTitle">
                     nasze osiągi
                 </p>
@@ -1264,7 +1267,7 @@
     </section>
     <section class="section-6" id="blog">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header animate__animated animate__zoomIn">
                 <p class="section__header--subTitle">
                     blog
                 </p>
@@ -1380,7 +1383,7 @@
     </section>
     <section class="section-7" id="why-us">
         <div class="container">
-            <div class="section__header">
+            <div class="section__header animate__animated animate__zoomIn">
                 <p class="section__header--subTitle">
                     dlaczego my?
                 </p>
@@ -1437,8 +1440,8 @@
                 <div class="section-8__ilustration-wrapper">
                     <img src="./assets/images/faq-ilustration.svg" alt="faq">
                 </div>
-                <div class="accordion">
-                    <div class="section__sideheader">
+                <div class="accordion animate__animated animate__fadeInRight">
+                    <div class="section__sideheader ">
                         <p class="section__sideheader--subTitle">
                             FAQ
                         </p>
@@ -1573,5 +1576,6 @@
 <script src="./assets/js/acordion.js"></script>
 <script src="./assets/js/hamburger.js"></script>
 <script src="./assets/js/pricing-switch.js"></script>
+<script src="./assets/js/counting-up.js"></script>
 </body>
 </html>
