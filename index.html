@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <title>Repute Up</title>
 </head>
 <body>
@@ -207,7 +208,7 @@
                         Tripadvisor
                     </button>
                 </div>
-                <div class="section-4__slider active-swiper">
+                <div class="section-4__slider google">
                     <div class="swiper swiper-google">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -599,7 +600,7 @@
                     <div class="slider-arrow-next arrow-next-google"></div>
                     <div class="swiper-pagination pagination-google"></div>
                 </div>
-                <div class="section-4__slider">
+                <div class="section-4__slider facebook">
                     <div class="swiper swiper-facebook">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -885,7 +886,7 @@
                     <div class="slider-arrow-next arrow-next-facebook"></div>
                     <div class="swiper-pagination pagination-facebook"></div>
                 </div>
-                <div class="section-4__slider">
+                <div class="section-4__slider tripadvisor">
                     <div class="swiper swiper-tripadvisor">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1577,5 +1578,17 @@
 <script src="./assets/js/hamburger.js"></script>
 <script src="./assets/js/pricing-switch.js"></script>
 <script src="./assets/js/counting-up.js"></script>
+
+<script>
+    $('.section-4__switch--btn').on('click', function() {
+        $('.switch_btn.btn-active').removeClass('btn-active');
+        $('.google').hide();
+        $('.facebook').hide();
+        $('.tripadvisor').hide();
+        let btnClass = $(this).data('id');
+        $('.'+btnClass).show();
+        $('.switch_btn[data-id="'+btnClass+'"]').addClass('btn-active');
+    })
+</script>
 </body>
 </html>
