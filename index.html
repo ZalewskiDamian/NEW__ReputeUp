@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
@@ -46,7 +46,7 @@
                 </div>
             </header>
             <div class="section-1__content">
-                <div class="section-1__wrapper animate__animated animate__fadeInLeft">
+                <div class="section-1__wrapper" data-aos="fade-right" data-aos-duration="800">
                     <h1 class="section-1__heading heading">
                         Dobra opinia to klucz do sukcesu
                     </h1>
@@ -55,8 +55,8 @@
                     </h4>
                     <a href="#about-us" class="btn section-1__btn">Sprawdź więcej</a>
                 </div>
-                <div class="section-1__ilustration ">
-                    <img src="./assets/images/hero-google-icon.svg" alt="google opinie logo" class="section-1__ilustration--icon animate__animated animate__zoomIn">
+                <div class="section-1__ilustration" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="./assets/images/hero-google-icon.svg" alt="google opinie logo" class="section-1__ilustration--icon">
                     <div class="section-1__ilustration--circle">
                         <img src="./assets/images/hero-fb-icon.svg" alt="facebook opinions" class="section-1__ilustration--circle-icon">
                     </div>
@@ -70,7 +70,7 @@
     <section class="section-2" id="about-us">
         <div class="container">
             <div class="section-2__wrapper">
-                <div class="section-2__text-wrapper animate__animated animate__fadeInLeft">
+                <div class="section-2__text-wrapper" data-aos="fade-right">
                     <div class="section__sideheader">
                         <p class="section__sideheader--subTitle">
                             o nas
@@ -86,7 +86,7 @@
                         ReputeUp  zajmuję się budowaniem i wzmacnianiem wizerunku w sieci oraz tworzeniem skutecznych kampanii reklamowych. Nadrzędnym celem naszej działalności jest zapewnienie Klientom pozytywnej i wiarygodnej opinii w Internecie, a co za tym idzie - mocnej pozycji na rynku pośród konkurencji. Mając świadomość, że zadowolony klient to najlepszy rodzaj promocji, prowadzimy spersonalizowane, a co najważniejsze - skuteczne działania opierające się na opiniach Google, a także marketingu szeptanym, realizowanym na najpopularniejszych portalach społecznościowych tak, aby zwiększyć renomę Twojej marki  i dotrzeć do jak największej liczby odbiorców.
                     </p>
                 </div>
-                <div class="section-2__img-wrapper animate__animated animate__fadeInRight">
+                <div class="section-2__img-wrapper" data-aos="fade-left">
                     <img src="./assets/images/about-us-ilustration.svg" alt="Google Opinie Kupno">
                 </div>
             </div>
@@ -94,7 +94,7 @@
     </section>
     <section class="section-3" id="workflow">
         <div class="container">
-            <div class="section__header animate__animated animate__zoomIn">
+            <div class="section__header" data-aos="zoom-in-up">
                 <p class="section__header--subTitle">
                     jak działamy
                 </p>
@@ -103,7 +103,7 @@
                 </h2>
             </div>
             <div class="section-3__content">
-                <div class="section-3__card">
+                <div class="section-3__card" data-aos="fade-right" data-aos-duration="800">
                     <div class="section-3__square">
                         <div class="section-3__circle">
                             <span class="section-3__card--counter">1</span>
@@ -119,7 +119,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="section-3__card">
+                <div class="section-3__card" data-aos="fade-right" data-aos-duration="900">
                     <div class="section-3__square">
                         <div class="section-3__circle">
                             <span class="section-3__card--counter">2</span>
@@ -135,7 +135,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="section-3__card">
+                <div class="section-3__card" data-aos="fade-right" data-aos-duration="1200">
                     <div class="section-3__square">
                         <div class="section-3__circle">
                             <span class="section-3__card--counter">3</span>
@@ -151,7 +151,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="section-3__card">
+                <div class="section-3__card" data-aos="fade-right" data-aos-duration="1400">
                     <div class="section-3__square">
                         <div class="section-3__circle">
                             <span class="section-3__card--counter">4</span>
@@ -167,7 +167,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="section-3__card">
+                <div class="section-3__card" data-aos="fade-right" data-aos-duration="1700">
                     <div class="section-3__square">
                         <div class="section-3__circle">
                             <span class="section-3__card--counter">5</span>
@@ -188,7 +188,7 @@
     </section>
     <section class="section-4" id="pricing">
         <div class="container">
-            <div class="section__header animate__animated animate__zoomIn">
+            <div class="section__header" data-aos="zoom-in-up">
                 <p class="section__header--subTitle">
                     nasza oferta
                 </p>
@@ -197,7 +197,7 @@
                 </h2>
             </div>
             <div class="section-4__content">
-                <div class="section-4__switch">
+                <div class="section-4__switch" data-aos="zoom-out" data-aos-duration="1000">
                     <button data-id="google" aria-expanded="false" class="section-4__switch--btn btn--active">
                         Google
                     </button>
@@ -208,7 +208,7 @@
                         Tripadvisor
                     </button>
                 </div>
-                <div class="section-4__slider google">
+                <div class="section-4__slider google" data-aos="fade-up">
                     <div class="swiper swiper-google">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -600,7 +600,7 @@
                     <div class="slider-arrow-next arrow-next-google"></div>
                     <div class="swiper-pagination pagination-google"></div>
                 </div>
-                <div class="section-4__slider facebook">
+                <div class="section-4__slider facebook" data-aos="fade-up">
                     <div class="swiper swiper-facebook">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -886,7 +886,7 @@
                     <div class="slider-arrow-next arrow-next-facebook"></div>
                     <div class="swiper-pagination pagination-facebook"></div>
                 </div>
-                <div class="section-4__slider tripadvisor">
+                <div class="section-4__slider tripadvisor" data-aos="fade-up">
                     <div class="swiper swiper-tripadvisor">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -1230,7 +1230,7 @@
     </section>
     <section class="section-5" id="achievements">
         <div class="container">
-            <div class="section__header animate__animated animate__zoomIn">
+            <div class="section__header" data-aos="zoom-in-up">
                 <p class="section__header--subTitle">
                     nasze osiągi
                 </p>
@@ -1239,7 +1239,7 @@
                 </h2>
             </div>
             <div class="section-5__content">
-                <div class="section-5__item">
+                <div class="section-5__item" data-aos="fade-right">
                     <h4 class="section-5__item-title">
                         550
                     </h4>
@@ -1247,7 +1247,7 @@
                         Zrealizowanych zleceń
                     </p>
                 </div>
-                <div class="section-5__item">
+                <div class="section-5__item" data-aos="fade-up">
                     <h4 class="section-5__item-title">
                         11 000
                     </h4>
@@ -1255,7 +1255,7 @@
                         Wystawionych opinii
                     </p>
                 </div>
-                <div class="section-5__item">
+                <div class="section-5__item" data-aos="fade-left">
                     <h4 class="section-5__item-title">
                         96%
                     </h4>
@@ -1268,7 +1268,7 @@
     </section>
     <section class="section-6" id="blog">
         <div class="container">
-            <div class="section__header animate__animated animate__zoomIn">
+            <div class="section__header" data-aos="zoom-in-up">
                 <p class="section__header--subTitle">
                     blog
                 </p>
@@ -1276,7 +1276,7 @@
                     Sprawdź nasze wpisy
                 </h2>
             </div>
-            <div class="section-6__content">
+            <div class="section-6__content" data-aos="zoom-in-down">
                 <div class="blog">
                     <div class="blog__image">
                         <img src="./assets/images/blog-image.png" alt="social media">
@@ -1384,7 +1384,7 @@
     </section>
     <section class="section-7" id="why-us">
         <div class="container">
-            <div class="section__header animate__animated animate__zoomIn">
+            <div class="section__header" data-aos="zoom-in-up">
                 <p class="section__header--subTitle">
                     dlaczego my?
                 </p>
@@ -1394,9 +1394,14 @@
             </div>
             <div class="section-7__content">
                 <div class="section-7__image-wrapper">
-                    <img src="./assets/images/why-us-image.svg" alt="repute up logo">
+                    <div class="section-7__circle-border">
+                        <div class="section-7__circle">
+                            <img src="./assets/images/Logo.svg" alt="ReputeUp logo" class="section-7__circle-logo">
+                        </div>
+                    </div>
+                    <img src="./assets/images/why-us-image.svg" alt="background image">
                 </div>
-                <div class="section-7__item">
+                <div class="section-7__item" data-aos="fade-down-right">
                     <img src="./assets/images/why-us-discretion.svg" alt="discretion" class="section-7__item--icon">
                     <h5 class="section-7__item--title">
                         100% dyskrecji
@@ -1405,7 +1410,7 @@
                         Zapewniamy pełną dyskrecję. Nie musisz się martwić o to, że ktoś dowie się o naszych działaniach.
                     </p>
                 </div>
-                <div class="section-7__item">
+                <div class="section-7__item" data-aos="fade-down-left">
                     <img src="./assets/images/why-us-authenticity.svg" alt="uthenticity" class="section-7__item--icon">
                     <h5 class="section-7__item--title">
                         Prawdziwe konta
@@ -1414,7 +1419,7 @@
                         Wszystkie nasze opinie są wystawiane z prawdziwych kont użytkowników popartych geolokalizacją, dzięki czemu recenzje wyglądają naturalnie.
                     </p>
                 </div>
-                <div class="section-7__item">
+                <div class="section-7__item" data-aos="fade-up-right">
                     <img src="./assets/images/why-us-personalization.svg" alt="personalization" class="section-7__item--icon">
                     <h5 class="section-7__item--title">
                         Personalizowanie treści
@@ -1423,7 +1428,7 @@
                         Nasze działania dostosowane są do specyfiki Twojej branży. Tak, aby reklama dotarła do odpowiedniej grupy odbiorców.
                     </p>
                 </div>
-                <div class="section-7__item">
+                <div class="section-7__item" data-aos="fade-up-left">
                     <img src="./assets/images/why-us-quality.svg" alt="quality" class="section-7__item--icon">
                     <h5 class="section-7__item--title">
                        Gwarancja jakości
@@ -1438,11 +1443,11 @@
     <section class="section-8" id="faq">
         <div class="container">
             <div class="section-8__content">
-                <div class="section-8__ilustration-wrapper">
+                <div class="section-8__ilustration-wrapper" data-aos="fade-right">
                     <img src="./assets/images/faq-ilustration.svg" alt="faq">
                 </div>
-                <div class="accordion animate__animated animate__fadeInRight">
-                    <div class="section__sideheader ">
+                <div class="accordion" data-aos="fade-left">
+                    <div class="section__sideheader">
                         <p class="section__sideheader--subTitle">
                             FAQ
                         </p>
@@ -1501,14 +1506,14 @@
     <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__content">
-                <div class="footer__logo-wrapper">
+                <div class="footer__logo-wrapper" data-aos="fade-up" data-aos-duration="600">
                     <img src="./assets/images/Logo.svg" alt="logo" class="footer__logo">
                     <p class="footer__text">
                         Reputeup.pl - profesjonalne opinie w sieci oraz odbudowa wizerunku 
                     </p>
                 </div>
                 <div class="footer__list-wrapper">
-                    <ul class="footer__list">
+                    <ul class="footer__list" data-aos="fade-up" data-aos-duration="800">
                         <li class="footer__list-item">
                             <span class="footer__list-title">
                                 Kontakt
@@ -1520,7 +1525,7 @@
                             </p>
                         </li>
                     </ul>
-                    <ul class="footer__list">
+                    <ul class="footer__list" data-aos="fade-up" data-aos-duration="1200">
                         <li class="footer__list-item">
                             <span class="footer__list-title">
                                 Nasze linki
@@ -1542,7 +1547,7 @@
                             <a href="#" class="footer__link">FAQ</a>
                         </li>
                     </ul>
-                    <ul class="footer__list">
+                    <ul class="footer__list" data-aos="fade-up" data-aos-duration="1600">
                         <li class="footer__list-item">
                             <span class="footer__list-title">
                                 Przydatne linki
@@ -1571,7 +1576,7 @@
         </div>
     </footer>
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="./assets/js/swiper.js"></script>
 <script src="./assets/js/acordion.js"></script>
@@ -1580,6 +1585,9 @@
 <script src="./assets/js/counting-up.js"></script>
 
 <script>
+    AOS.init({
+        duration: 500,
+    });
     $('.section-4__switch--btn').on('click', function() {
         $('.switch_btn.btn-active').removeClass('btn-active');
         $('.google').hide();
