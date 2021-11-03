@@ -1237,10 +1237,12 @@
         }
         &__btn {
             position: relative;
-            display: block;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             text-align: left;
             width: 100%;
-            padding: 1em 0;
+            padding: 10px 0;
             color: $black;
             font-size: 1.15rem;
             font-weight: 400;
@@ -1269,19 +1271,20 @@
         }
         &__btn[aria-expanded='true'] + .accordion__content {
             opacity: 1;
+            padding: 20px 0;
             max-height: 6em;
             transition: all 200ms linear;
             will-change: opacity, max-height;
         }
         &__title {
-            padding: 1em 1.5em 1em 0;
+            padding: 10px 15px 10px 0;
             font-size: 18px;
             font-weight: 700;
         }
         &__icon {
-            display: inline-block;
             position: absolute;
-            top: 18px;
+            top: 50%;
+            transform: translateY(-50%);
             right: 0;
             width: 22px;
             height: 22px;
@@ -1313,9 +1316,6 @@
             overflow: hidden;
             transition: opacity 200ms linear, max-height 200ms linear;
             will-change: opacity, max-height;
-        }
-        &__text {
-            margin: 2em 0;
         }
     }
 }

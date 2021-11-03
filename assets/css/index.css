@@ -2022,10 +2022,18 @@ section {
 
 .section-8 .accordion__btn {
   position: relative;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: left;
   width: 100%;
-  padding: 1em 0;
+  padding: 10px 0;
   color: #0F2137;
   font-size: 1.15rem;
   font-weight: 400;
@@ -2056,6 +2064,7 @@ section {
 
 .section-8 .accordion__btn[aria-expanded='true'] + .accordion__content {
   opacity: 1;
+  padding: 20px 0;
   max-height: 6em;
   -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
@@ -2063,15 +2072,16 @@ section {
 }
 
 .section-8 .accordion__title {
-  padding: 1em 1.5em 1em 0;
+  padding: 10px 15px 10px 0;
   font-size: 18px;
   font-weight: 700;
 }
 
 .section-8 .accordion__icon {
-  display: inline-block;
   position: absolute;
-  top: 18px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 0;
   width: 22px;
   height: 22px;
@@ -2106,10 +2116,6 @@ section {
   -webkit-transition: opacity 200ms linear, max-height 200ms linear;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
-}
-
-.section-8 .accordion__text {
-  margin: 2em 0;
 }
 
 .footer {
