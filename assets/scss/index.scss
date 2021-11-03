@@ -75,8 +75,8 @@
             opacity: 0;
             width: 100vw;
             height: 100vh;
-            position: absolute;
-            z-index: 2;
+            position: fixed;
+            z-index: 20;
             display: flex;
             top: 0;
             left: 0;
@@ -135,7 +135,7 @@
         &__hamburger {
             width: 30px;
             cursor: pointer;
-            z-index: 3;
+            z-index: 21;
 
             @include media-sm {
                 display: none;
@@ -1122,7 +1122,7 @@
         align-items: center;
         padding: 15px;
         opacity: 1;
-        animation: pulse 2s infinite;
+        animation: pulse-white 2s infinite;
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
 
         @include media-md {
@@ -1133,7 +1133,7 @@
             height: 260px;
         }
 
-        @keyframes pulse {
+        @keyframes pulse-white {
             0% {
               transform: translate(-50%, -50%) scale(0.95);
               box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
