@@ -15,34 +15,36 @@
 <div class="site-wrapper">
     <section class="section-1" id="hero">
         <div class="container">
-            <header class="header">
-                <div class="header__logo">
-                    <a href="#">
-                        <img src="./assets/images/Logo.svg" alt="website logo">
-                    </a>
-                </div>
-                <nav class="header__navigation">
-                    <li class="header__navigation-item">
-                        <a href="#workflow" class="header__navigation-link">Jak działamy</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a href="#pricing" class="header__navigation-link">Oferta</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a href="#why-us" class="header__navigation-link">Dlaczego my</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a href="#faq" class="header__navigation-link">FAQ</a>
-                    </li>
-                    <li class="header__navigation-item">
-                        <a href="#footer" class="header__navigation-link">Kontakt</a>
-                    </li>
-                </nav>
-                <a href="./templates/login.html" class="header__order-btn btn">Zamów</a>
-                <div class="header__hamburger">
-                    <div class="header__hamburger--line"></div>
-                    <div class="header__hamburger--line"></div>
-                    <div class="header__hamburger--line"></div>
+            <header class="header" id="header">
+                <div class="header__container container">
+                    <div class="header__logo">
+                        <a href="#">
+                            <img src="./assets/images/Logo.svg" alt="website logo">
+                        </a>
+                    </div>
+                    <nav class="header__navigation">
+                        <li class="header__navigation-item">
+                            <a href="#workflow" class="header__navigation-link">Jak działamy</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#pricing" class="header__navigation-link">Oferta</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#why-us" class="header__navigation-link">Dlaczego my</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#faq" class="header__navigation-link">FAQ</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#footer" class="header__navigation-link">Kontakt</a>
+                        </li>
+                    </nav>
+                    <a href="./templates/login.html" class="header__order-btn btn">Zamów</a>
+                    <div class="header__hamburger">
+                        <div class="header__hamburger--line"></div>
+                        <div class="header__hamburger--line"></div>
+                        <div class="header__hamburger--line"></div>
+                    </div>
                 </div>
             </header>
             <div class="section-1__content">
@@ -1240,25 +1242,19 @@
             </div>
             <div class="section-5__content">
                 <div class="section-5__item" data-aos="fade-right">
-                    <h4 class="section-5__item-title">
-                        550
-                    </h4>
+                    <div class="section-5__item-title counter" data-target="1500">0</div>
                     <p class="section-5__item-text">
                         Zrealizowanych zleceń
                     </p>
                 </div>
                 <div class="section-5__item" data-aos="fade-up">
-                    <h4 class="section-5__item-title">
-                        11 000
-                    </h4>
+                    <div class="section-5__item-title counter" data-target="6000">0</div>
                     <p class="section-5__item-text">
                         Wystawionych opinii
                     </p>
                 </div>
                 <div class="section-5__item" data-aos="fade-left">
-                    <h4 class="section-5__item-title">
-                        96%
-                    </h4>
+                    <div class="section-5__item-title counter" data-target="94">0</div>
                     <p class="section-5__item-text">
                         Skuteczności
                     </p>
@@ -1532,19 +1528,19 @@
                             </span>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">O nas</a>
+                            <a href="#about-us" class="footer__link">O nas</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Jak działamy?</a>
+                            <a href="#workflow" class="footer__link">Jak działamy?</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Dlaczego my?</a>
+                            <a href="#why-us" class="footer__link">Dlaczego my?</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Oferta</a>
+                            <a href="#pricing" class="footer__link">Oferta</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">FAQ</a>
+                            <a href="#faq" class="footer__link">FAQ</a>
                         </li>
                     </ul>
                     <ul class="footer__list" data-aos="fade-up" data-aos-duration="1600">
@@ -1554,16 +1550,16 @@
                             </span>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Regulamin</a>
+                            <a href="https://reputeup.pl/#regulamin" class="footer__link">Regulamin</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Kontakt</a>
+                            <a href="#footer" class="footer__link">Kontakt</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Blog</a>
+                            <a href="#blog" class="footer__link">Blog</a>
                         </li>
                         <li class="footer__list-item">
-                            <a href="#" class="footer__link">Panel logowania</a>
+                            <a href="./templates/login.html" class="footer__link">Panel logowania</a>
                         </li>
                     </ul>
                 </div>
@@ -1582,21 +1578,8 @@
 <script src="./assets/js/acordion.js"></script>
 <script src="./assets/js/hamburger.js"></script>
 <script src="./assets/js/pricing-switch.js"></script>
-<script src="./assets/js/counting-up.js"></script>
-
-<script>
-    AOS.init({
-        duration: 500,
-    });
-    $('.section-4__switch--btn').on('click', function() {
-        $('.switch_btn.btn-active').removeClass('btn-active');
-        $('.google').hide();
-        $('.facebook').hide();
-        $('.tripadvisor').hide();
-        let btnClass = $(this).data('id');
-        $('.'+btnClass).show();
-        $('.switch_btn[data-id="'+btnClass+'"]').addClass('btn-active');
-    })
-</script>
+<script src="./assets/js/header-sticky.js"></script>
+<!-- <script src="./assets/js/number-counter.js"></script> -->
+<script src="./assets/js/index-animations.js"></script>
 </body>
 </html>

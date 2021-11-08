@@ -14,58 +14,63 @@
         <div class="forms-container">
             <div class="signin-signup">
                 <div class="form-wrapper sign-in-form">
-                    <form action="" class="form form-toggle">
+                    <form method="POST" action="#" class="form form-toggle">
                         <h2 class="title">Zaloguj się</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Nazwa użytkownika">
+                            <input type="email" name="email" id="login" required="required" placeholder="Adres e-mail">
                         </div>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Hasło">
+                            <input type="password" name="passowrd" id="password" required="required" placeholder="Hasło">
                         </div>
                         <input type="submit" value="Zaloguj się" class="btn solid">
-                        <button type="button" aria-expanded="true" class="toggle-btn">Przypomnij hasło</button>
+                        <button type="submit" id="login_btn" aria-expanded="true" class="toggle-btn">Przypomnij hasło</button>
                     </form>
-                    <form action="" class="form form-toggle form-toggle-swipe">
+                    <form method="POST" action="#" class="form form-toggle form-toggle-swipe">
                         <h2 class="title">Przypomnij hasło</h2>
                         <p class="form-text">
                             Podaj adres e-mail, na który zostanie wysłane nowe hasło.
                         </p>
                         <div class="input-field">
                             <i class="fas fa-envelope"></i>
-                            <input type="text" placeholder="Email">
+                            <input type="email" name="remind-email" id="remind_email" required="required" placeholder="Email">
                         </div>
                         <input type="submit" value="Przypomnij hasło" class="btn solid">
                         <button type="button" aria-expanded="false" class="toggle-btn">Powrót</button>
                     </form>
                 </div>
                 <div class="form-wrapper sign-up-form">
-                    <form action="" class="form" autocomplete="false">
+                    <form method="" action="#" class="form" id="registerForm">
                         <h2 class="title">Zarejestruj się</h2>
                         <div class="input-field">
                             <i class="fas fa-user"></i>
-                            <input type="text" placeholder="Imię">
+                            <input type="text" name="name" id="name" placeholder="Imię">
                         </div>
+                        <p class="error-feedback">Wprowadź poprawnie imię</p>
                         <div class="input-field">
                             <i class="fas fa-envelope"></i>
-                            <input type="text" placeholder="Email">
+                            <input type="email" name="email" id="email" placeholder="Email">
                         </div>
+                        <p class="error-feedback">Wprowadź poprawnie e-mail</p>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Hasło">
+                            <input type="password" name="password" id="password" placeholder="Hasło">
                         </div>
+                        <p class="error-feedback">Wprowadź poprawnie hasło</p>
                         <div class="input-field">
                             <i class="fas fa-lock"></i>
-                            <input type="password" placeholder="Powtórz hasło">
+                            <input type="password" name="vpassword" id="repeat_password" placeholder="Powtórz hasło">
                         </div>
+                        <p class="error-feedback">Podane hasła nie są identyczne</p>
                         <div class="checkbox-field">
                             <input type="checkbox" id="regulationAccept">
                             <label for="regulationAccept" class="checkbox">
                                 Zapoznałem się z <a href="https://reputeup.pl/#regulamin" class="checkbox-link">Regulaminem</a> serwisu i akceptuję jego treść.
                             </label>
                         </div>
-                        <input type="submit" value="Zarejestruj się" class="btn solid">
+                        <!-- <input type="hidden" name="check" value="1"> -->
+                        <input type="submit" value="Zarejestruj się" id="register_btn" class="btn solid">
                     </form>
                 </div>
             </div>
@@ -99,5 +104,6 @@
     </div>
 <script src="../assets/js/login-animation.js"></script>
 <script src="../assets/js/form-toggle.js"></script>
+<script src="../assets/js/register-validation.js"></script>
 </body>
 </html>

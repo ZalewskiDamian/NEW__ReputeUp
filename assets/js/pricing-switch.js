@@ -1,3 +1,4 @@
+//SWITCH BUTTONS
 const buttons = document.querySelectorAll('.section-4__switch--btn');
 
 function toggleButton() {
@@ -20,3 +21,14 @@ function toggleButton() {
 }
 
 buttons.forEach((item) => item.addEventListener('click', toggleButton));
+
+//SWITCH PRICING PLAN'S
+$('.section-4__switch--btn').on('click', function() {
+    $('.switch_btn.btn-active').removeClass('btn-active');
+    $('.google').hide();
+    $('.facebook').hide();
+    $('.tripadvisor').hide();
+    let btnClass = $(this).data('id');
+    $('.'+btnClass).show();
+    $('.switch_btn[data-id="'+btnClass+'"]').addClass('btn-active');
+});

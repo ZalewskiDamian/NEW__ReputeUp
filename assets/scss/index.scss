@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-top: 20px;
+    padding-top: 55px;
     padding-bottom: 100px;
 
     @include media-sm {
@@ -20,13 +20,23 @@
     }
     @include media-xl {
         padding-bottom: 360px;
+        padding-top: 60px;
     }
 
     .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transition: .6s;
+        padding: 15px 0;
+        z-index: 9999;
 
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         &__logo {
             max-width: 120px;
 
@@ -166,6 +176,11 @@
                 }
             }
         }
+    }
+    .header.sticky {
+        background: #4d31a7;
+        box-shadow: 0 3px 6px rgba(0,0,0, .16);
+        padding: 20px 0;  
     }
     &__content {
         position: relative;
@@ -1199,6 +1214,8 @@
 .section-8 {
     padding-top: 10px;
     padding-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
 
     @include media-sm {
         padding-bottom: 50px;
@@ -1232,6 +1249,9 @@
         }
     }
     .accordion {
+        width: 100%;
+        overflow: hidden;
+
         &__item {
             border-bottom: 1px dashed #e5e5e5;
         }
