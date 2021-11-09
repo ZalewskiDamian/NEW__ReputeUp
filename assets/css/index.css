@@ -1528,12 +1528,17 @@ section {
   margin-bottom: 20px;
 }
 
+.section-5__item-icon.icon-margin {
+  margin-left: 5px;
+}
+
 .section-5__item-title {
   color: #B3568F;
   font-size: 36px;
   line-height: 1.4;
   font-weight: 700;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .section-5__item-text {

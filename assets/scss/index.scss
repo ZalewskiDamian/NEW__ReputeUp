@@ -905,12 +905,16 @@
         height: 65px;
         margin-bottom: 20px;
     }
+    &__item-icon.icon-margin {
+        margin-left: 5px;
+    }
     &__item-title {
         color: $pink;
         font-size: 36px;
         line-height: 1.4;
         font-weight: 700;
         margin-bottom: 10px;
+        position: relative;
     }
     &__item-text {
         color: $white;

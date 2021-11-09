@@ -1,20 +1,35 @@
-const counters = document.querySelectorAll('.counter');
-const speed = 300;
+const section = document.getElementById('achievements');
+var count = false;
 
-counters.forEach(counter => {
-    const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+      if (!startTimestamp) startTimestamp = timestamp;
+      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+      obj.innerHTML = Math.floor(progress * (end - start) + start);
+      if (progress < 1) {
+        window.requestAnimationFrame(step);
+      }
+    };
+    window.requestAnimationFrame(step);
+}
 
-        const inc = target / speed;
+window.addEventListener('scroll', () => {
+    if (section.getBoundingClientRect.top = window.innerHeight && count == false) {
+        count = true;
+        //FIRST NUMBER
+        const obj = document.getElementById("number-one");
+        animateValue(obj, 0, 550, 3000);
 
-        if(count < target) {
-            counter.innerText = count + inc;
-            setTimeout(updateCount, 1);
-        } else {
-            count.innerText = target;
-        }
-    }
+        //SECOND NUMBER
+        const obj2 = document.getElementById("number-two");
+        animateValue(obj2, 0, 4400, 3000);
 
-    updateCount();
+        //THIRD NUMBER
+        const obj3 = document.getElementById("number-three");
+        animateValue(obj3, 0, 96, 3000);
+
+        
+    };
 });
+
