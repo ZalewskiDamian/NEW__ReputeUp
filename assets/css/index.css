@@ -262,8 +262,8 @@ section {
 
 @media (min-width: 768px) {
   .section-1 {
-    background-image: url(../images/road-bg.svg), -webkit-gradient(linear, left top, right top, from(#1f3a85), to(#8155b1));
-    background-image: url(../images/road-bg.svg), linear-gradient(90deg, #1f3a85 0%, #8155b1 100%);
+    background-image: url(../images/road-bg.svg), -webkit-gradient(linear, left top, right top, from(#4d31a7), to(#4527a5));
+    background-image: url(../images/road-bg.svg), linear-gradient(90deg, #4d31a7 0%, #4527a5 100%);
   }
 }
 

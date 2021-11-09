@@ -28,8 +28,6 @@ window.addEventListener('scroll', () => {
         //THIRD NUMBER
         const obj3 = document.getElementById("number-three");
         animateValue(obj3, 0, 96, 3000);
-
-        
     };
 });
 
