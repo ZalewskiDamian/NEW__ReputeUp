@@ -901,6 +901,10 @@
     &__item {
         text-align: center;
     }
+    &__item-icon {
+        height: 65px;
+        margin-bottom: 20px;
+    }
     &__item-title {
         color: $pink;
         font-size: 36px;

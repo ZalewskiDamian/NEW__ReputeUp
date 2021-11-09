@@ -1523,6 +1523,11 @@ section {
   text-align: center;
 }
 
+.section-5__item-icon {
+  height: 65px;
+  margin-bottom: 20px;
+}
+
 .section-5__item-title {
   color: #B3568F;
   font-size: 36px;
