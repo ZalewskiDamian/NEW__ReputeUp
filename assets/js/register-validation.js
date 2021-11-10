@@ -69,7 +69,7 @@ const setSucces = (element, err) => {
 registerForm.addEventListener('submit', (e) => {
     const name = document.getElementById('name');
     const email = document.getElementById('email');
-    const password1 = document.getElementById('password');
+    const password1 = document.getElementById('register_password');
     const password2 = document.getElementById('repeat_password');
     hasErrors = false;
 
