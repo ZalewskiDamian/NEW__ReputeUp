@@ -9,10 +9,26 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <title>Repute Up</title>
+    <title>Pewne opinie google, zwiększ reputację swojej firmy z ReputeUp.pl</title>
 </head>
 <body>
 <div class="site-wrapper">
+    <div class="overlay"></div>
+    <div class="popup">
+        <div class="popup__content">
+            <img src="./assets/images/popup-close-icon.svg" alt="close" class="popup__close">
+            <div class="popup__text-wrapper">
+                <p class="popup__title">
+                    Darmowa opinia!
+                </p>
+                <p class="popup__text">
+                    Dla nowych użytkowników mamy przygotowany prezent. Do pierwszego zamówienia otrzymasz jedną opinię gratis.
+                </p>
+                <a href="./templates/login.html" class="popup__btn btn">Zarejestruj się</a>
+            </div>
+            <img src="./assets/images/popup-ilustration.svg" alt="gift image" class="popup__ilustration">
+        </div>
+    </div>
     <section class="section-1" id="hero">
         <div class="container">
             <header class="header" id="header">
@@ -1585,5 +1601,6 @@
 <script src="./assets/js/header-sticky.js"></script>
 <script src="./assets/js/number-counter.js"></script>
 <script src="./assets/js/index-animations.js"></script>
+<script src="./assets/js/popup.js"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+<svg width="680" height="400" viewBox="0 0 680 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_9_3" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="680" height="400">
+<rect width="680" height="400" fill="#C4C4C4"/>
+</mask>
+<g mask="url(#mask0_9_3)">
+</g>
+<g clip-path="url(#clip0_9_3)">
+<path d="M1117 -768H-883V1232H1117V-768Z" fill="#B1558D"/>
+<path d="M-903 -788L1137 1252" stroke="#B3568F" stroke-width="42.5"/>
+<path d="M-903 -725.5L1137 1314.5" stroke="#B3568F" stroke-width="40"/>
+<path d="M-903 -850.5L1137 1189.5" stroke="#B3568F" stroke-width="40"/>
+<path d="M-903 -663L1137 1377" stroke="#B45690" stroke-width="37.5"/>
+<path d="M-903 -913L1137 1127" stroke="#B45690" stroke-width="37.5"/>
+<path d="M-903 -600.5L1137 1439.5" stroke="#B45790" stroke-width="35"/>
+<path d="M-903 -975.5L1137 1064.5" stroke="#B45790" stroke-width="35"/>
+<path d="M-903 -538L1137 1502" stroke="#B55790" stroke-width="32.5"/>
+<path d="M-903 -1038L1137 1002" stroke="#B55790" stroke-width="32.5"/>
+<path d="M-903 -475.5L1137 1564.5" stroke="#B55791" stroke-width="30"/>
+<path d="M-903 -1100.5L1137 939.5" stroke="#B55791" stroke-width="30"/>
+<path d="M-903 -413L1137 1627" stroke="#B65791" stroke-width="27.5"/>
+<path d="M-903 -1163L1137 877" stroke="#B65791" stroke-width="27.5"/>
+<path d="M-903 -350.5L1137 1689.5" stroke="#B65892" stroke-width="25"/>
+<path d="M-903 -1225.5L1137 814.5" stroke="#B65892" stroke-width="25"/>
+<path d="M-903 -288L1137 1752" stroke="#B75892" stroke-width="22.5"/>
+<path d="M-903 -1288L1137 752" stroke="#B75892" stroke-width="22.5"/>
+<path d="M-903 -225.5L1137 1814.5" stroke="#B75892" stroke-width="20"/>
+<path d="M-903 -1350.5L1137 689.5" stroke="#B75892" stroke-width="20"/>
+<path d="M-903 -163L1137 1877" stroke="#B85893" stroke-width="17.5"/>
+<path d="M-903 -1413L1137 627" stroke="#B85893" stroke-width="17.5"/>
+<path d="M-903 -100.5L1137 1939.5" stroke="#B85993" stroke-width="15"/>
+<path d="M-903 -1475.5L1137 564.5" stroke="#B85993" stroke-width="15"/>
+<path d="M-903 -38L1137 2002" stroke="#B95993" stroke-width="12.5"/>
+<path d="M-903 -1538L1137 502" stroke="#B95993" stroke-width="12.5"/>
+<path d="M-903 -2038L1137 2" stroke="#B95993" stroke-width="12.5"/>
+<path d="M-903 399.5L1137 2439.5" stroke="#B95994" stroke-width="10"/>
+<path d="M-903 24.5L1137 2064.5" stroke="#B95994" stroke-width="10"/>
+<path d="M-903 -1600.5L1137 439.5" stroke="#B95994" stroke-width="10"/>
+<path d="M-903 -1975.5L1137 64.5" stroke="#B95994" stroke-width="10"/>
+<path d="M-903 87L1137 2127" stroke="#BA5994" stroke-width="7.5"/>
+<path d="M-903 337L1137 2377" stroke="#BA5994" stroke-width="7.5"/>
+<path d="M-903 -1913L1137 127" stroke="#BA5994" stroke-width="7.5"/>
+<path d="M-903 -1663L1137 377" stroke="#BA5994" stroke-width="7.5"/>
+<path d="M-903 149.5L1137 2189.5" stroke="#BA5A95" stroke-width="5"/>
+<path d="M-903 274.5L1137 2314.5" stroke="#BA5A95" stroke-width="5"/>
+<path d="M-903 -1850.5L1137 189.5" stroke="#BA5A95" stroke-width="5"/>
+<path d="M-903 -1725.5L1137 314.5" stroke="#BA5A95" stroke-width="5"/>
+<path d="M-903 212L1137 2252" stroke="#BB5A95" stroke-width="2.5"/>
+<path d="M-903 -1788L1137 252" stroke="#BB5A95" stroke-width="2.5"/>
+</g>
+<defs>
+<clipPath id="clip0_9_3">
+<rect width="2000" height="2000" fill="white" transform="translate(-883 -768)"/>
+</clipPath>
+</defs>
+</svg>

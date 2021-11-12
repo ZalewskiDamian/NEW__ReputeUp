@@ -294,7 +294,7 @@ section {
   -webkit-transition: .6s;
   transition: .6s;
   padding: 15px 0;
-  z-index: 9999;
+  z-index: 997;
 }
 
 .section-1 .header__container {
@@ -2314,5 +2314,132 @@ section {
   font-size: 14px;
   color: #ffffff;
   font-weight: 500;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  visibility: visible;
+}
+
+.popup {
+  width: 100%;
+  height: auto;
+  max-width: 340px;
+  background: url(../images/popup-bg.svg);
+  background-size: 100% 100%;
+  position: fixed;
+  visibility: visible;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .popup {
+    max-width: 680px;
+  }
+}
+
+.popup__content {
+  padding: 30px 20px;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .popup__content {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__text-wrapper {
+    padding-right: 15px;
+  }
+}
+
+.popup__title {
+  color: white;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .popup__title {
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 20px;
+  }
+}
+
+.popup__text {
+  color: white;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: 768px) {
+  .popup__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.popup__btn {
+  background-color: white;
+  color: #0F2137;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.popup__btn:hover {
+  background-color: #e6e6e6;
+}
+
+@media (min-width: 768px) {
+  .popup__btn {
+    font-size: 22px;
+  }
+}
+
+.popup__close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .popup__close {
+    width: 30px;
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
