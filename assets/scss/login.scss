@@ -105,7 +105,6 @@ input {
 .title {
   font-size: 2.2rem;
   color: #444;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -207,8 +206,11 @@ input {
   color: #333;
 }
 
-.input-field input:-internal-autofill-selected {
-  background-color: transparent;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 .input-field input::placeholder {
@@ -451,7 +453,7 @@ input {
   }
 
   .checkbox-field .checkbox {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
   .container:before {
     width: 1500px;
@@ -486,7 +488,7 @@ input {
   }
 
   .container.sign-up-mode .signin-signup {
-    top: 5%;
+    top: 3%;
     transform: translate(-50%, 0);
   }
 }
