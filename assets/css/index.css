@@ -1223,8 +1223,14 @@ section {
 .section-4__information {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .section-4__information {
+    font-size: 18px;
+  }
 }
 
 .section-4__switch {
@@ -2362,9 +2368,9 @@ section {
 }
 
 .popup {
-  width: 100%;
+  width: 90%;
   height: auto;
-  max-width: 320px;
+  max-width: 360px;
   background: url(../images/popup-bg.svg);
   background-size: 100% 100%;
   position: fixed;
@@ -2379,6 +2385,7 @@ section {
 
 @media (min-width: 768px) {
   .popup {
+    width: 100%;
     max-width: 680px;
   }
 }
