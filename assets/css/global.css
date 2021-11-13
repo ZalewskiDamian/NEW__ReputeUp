@@ -21,7 +21,6 @@
 @media (min-width: 1240px) {
   .heading {
     font-size: 70px;
-    text-shadow: 1px 1px 2px #000;
   }
 }
 
@@ -212,6 +211,11 @@ img {
 
 button {
   font-family: 'DM Sans', sans-serif;
+}
+
+.site-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 section {

@@ -21,7 +21,6 @@
 @media (min-width: 1240px) {
   .heading {
     font-size: 70px;
-    text-shadow: 1px 1px 2px #000;
   }
 }
 
@@ -212,6 +211,11 @@ img {
 
 button {
   font-family: 'DM Sans', sans-serif;
+}
+
+.site-wrapper {
+  width: 100%;
+  overflow: hidden;
 }
 
 section {
@@ -2014,7 +2018,6 @@ section {
 .section-8 {
   padding-top: 10px;
   padding-bottom: 30px;
-  width: 100%;
   overflow: hidden;
 }
 
@@ -2036,6 +2039,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2145,9 +2149,7 @@ section {
 
 .section-8 .accordion__icon {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  top: 23px;
   right: 0;
   width: 22px;
   height: 22px;
@@ -2356,17 +2358,17 @@ section {
           backdrop-filter: blur(6px);
   background: rgba(0, 0, 0, 0.7);
   z-index: 998;
-  visibility: visible;
+  display: block;
 }
 
 .popup {
   width: 100%;
   height: auto;
-  max-width: 340px;
+  max-width: 320px;
   background: url(../images/popup-bg.svg);
   background-size: 100% 100%;
   position: fixed;
-  visibility: visible;
+  display: block;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

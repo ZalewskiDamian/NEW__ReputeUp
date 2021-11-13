@@ -54,7 +54,6 @@ $footer-gradient: linear-gradient(90deg, rgba(48,50,145,1) 0%, rgba(24,25,73,1) 
     }
     @include media-lg {
         font-size: 70px;
-        text-shadow: 1px 1px 2px #000;
     }
 }
 
@@ -208,6 +207,10 @@ button {
     font-family: 'DM Sans', sans-serif;
 }
 
+.site-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
 section {
     position: relative;
 }
