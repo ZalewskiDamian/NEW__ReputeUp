@@ -2552,4 +2552,34 @@ section {
   margin-right: 100%;
   right: 10px;
 }
+
+.cookiealert {
+  background: #b3568f !important;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cookiealert__link {
+  color: #ffffff;
+  margin-left: 10px;
+  text-decoration: underline;
+}
+
+.cookiealert__btn {
+  color: #ffffff;
+  background-color: #303291;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
 /*# sourceMappingURL=index.css.map */

@@ -1666,3 +1666,28 @@
         }
     }
 }
+
+//COOKIES
+.cookiealert {
+    background: #b3568f!important;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__link {
+        color: $white;
+        margin-left: 10px;
+        text-decoration: underline;
+    }
+    &__btn {
+        color: $white;
+        background-color: $navy-blue-dark;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        outline: none;
+    }
+}
