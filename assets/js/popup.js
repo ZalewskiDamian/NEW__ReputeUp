@@ -1,4 +1,4 @@
-const overlay = document.querySelector('.overlay');
+var overlay = document.querySelector('.overlay');
 const popup = document.querySelector('.popup');
 const close = document.querySelector('.popup__close');
 
