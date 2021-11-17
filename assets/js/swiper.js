@@ -73,6 +73,7 @@ var swiper4 = new Swiper('.swiper-blog', {
   loop: true,
   slidesPerView: 1,
   pagination: false,
+  loop: true,
   navigation: {
     nextEl: '.arrow-next-blog',
     prevEl: '.arrow-prev-blog',
@@ -80,19 +81,15 @@ var swiper4 = new Swiper('.swiper-blog', {
   breakpoints: {
       640: {
           slidesPerView: 2,
-          spaceBetween: 20,
       },
       768: {
           slidesPerView: 3,
-          spaceBetween: 30,
       },
       1024: {
         slidesPerView: 4,
-        spaceBetween: 30,
       },
       1280: {
         slidesPerView: 5,
-        spaceBetween: 30,
       }
   }
 });
