@@ -1506,7 +1506,7 @@
     backdrop-filter: blur(6px);
     background: rgba(0,0,0, .7);
     z-index: 998;
-    display: block;
+    display: none;
 }
 .popup {
     width: 90%;
@@ -1515,7 +1515,7 @@
     background: url(../images/popup-bg.svg);
     background-size: 100% 100%;
     position: fixed;
-    display: block;
+    display: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

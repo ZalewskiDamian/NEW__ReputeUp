@@ -15,12 +15,11 @@ function animateValue(obj, start, end, duration) {
 }
 
 window.addEventListener('scroll', () => {
-    if (section.getBoundingClientRect.top = window.innerHeight && count == false) {
+    if (window.scrollY >= section.getBoundingClientRect().top  && count == false) {
         count = true;
         //FIRST NUMBER
         const obj = document.getElementById("number-one");
         animateValue(obj, 0, 550, 3000);
-
         //SECOND NUMBER
         const obj2 = document.getElementById("number-two");
         animateValue(obj2, 0, 4400, 3000);
