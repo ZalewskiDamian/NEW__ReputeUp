@@ -85,11 +85,11 @@ var swiper4 = new Swiper('.swiper-blog', {
       768: {
           slidesPerView: 3,
       },
-      1024: {
-        slidesPerView: 4,
-      },
-      1280: {
-        slidesPerView: 5,
-      }
+      // 1024: {
+      //   slidesPerView: 4,
+      // },
+      // 1280: {
+      //   slidesPerView: 5,
+      // }
   }
 });
